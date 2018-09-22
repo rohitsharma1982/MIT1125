@@ -42,7 +42,8 @@ function initialize(){
 
     //  build map
     // ---------------------------------
-    var myLatlng = new google.maps.LatLng(41.886903, -87.722740);
+    // var myLatlng = new google.maps.LatLng(41.886903, -87.722740); // Chicago
+    var myLatlng = new google.maps.LatLng(36.114647, -115.172813); // Las Vegas
     var myOptions = {
       zoom: 12,
       center: myLatlng,
