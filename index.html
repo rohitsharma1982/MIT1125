@@ -1,1 +1,32 @@
-Hello World !
+<!DOCTYPE html>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization"></script>
+<script src="LasVegas2017.json" ></script>
+<style>
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+</style>
+<h1>Hello!</h1>
+<h2>Welcome to 1.125 page of Rohit Sharma.</h2>
+<h3>Here is a crime heat map of Las Vegas.</h3>
+<div class="map-container">
+	<div id="map-canvas" style="height:600px;width:800px"></div>
+</div>
+<script type="text/javascript">
+
+function point(crime){
+  var point = {};
+    
+  point.latitude = crime[17][1];
+  point.longitude = crime[17][2];
+
+  return point;
+}
+
+var points = lasvegas.data.map(point);
+
+</script>
+<script src="heatmap.js"></script>
+</html>
